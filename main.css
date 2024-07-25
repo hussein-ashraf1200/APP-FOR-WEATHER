@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "popins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+}
+/* @media (max-width: 482px) {
+  .body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+} */
+.card {
+  width: 100%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 30px auto 0;
+  border-radius: 23px;
+  padding: 40px 35px;
+  text-align: center;
+}
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search input {
+  border: 0;
+  outline: 0;
+  background-color: #ebfffc;
+  color: #555;
+  padding: 10px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+.search button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.search button img {
+  width: 16px;
+}
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+.weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+.detials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+.humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+.error {
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  display: none;
+}
+#b1 {
+  position: absolute;
+  transform: translate(290%, -110%);
+  font-size: 18px;
+  border-radius: 66px 0px 0px 66px;
+  width: 40px;
+  outline: none;
+  background: #ebfffc;
+  border-radius: 1px solid silver;
+  transition: 1s;
+}
+#b2 {
+  position: absolute;
+  transform: translate(400%, -110%);
+  font-size: 18px;
+  border-radius: 0px 66px 66px 0px;
+  width: 40px;
+  outline: none;
+  background: #ebfffc;
+  border-radius: 2px solid silver;
+  transition: 1s;
+}
+#b1:hover,
+#b2:hover {
+  background-color: #68877f;
+  box-shadow: 1px 1px 10px gray;
+}
+/* small  */
+@media (max-width: 766px) {
+  #b1 {
+    transform: translate(160%, -110%);
+  }
+  #b2 {
+    transform: translate(270%, -110%);
+  }
+  .card {
+    width: 100%;
+    margin-top: 0;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
+
+/* small  */
+/* @media (min-width: 768px) {
+  .card {
+    margin-top: 0;
+    height: 100vh;
+    border-radius: 25px;
+  }
+} */
+/* @media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+} */
